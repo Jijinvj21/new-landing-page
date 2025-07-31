@@ -14,21 +14,24 @@ const SelectTrigger = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
   <SelectPrimitive.Trigger
-    ref={ref}
-    className={cn(
-      "flex h-12 w-full items-center justify-between rounded-lg bg-[#0f0f0f] px-4 py-2 text-sm text-white placeholder:text-gray-400",
-      "focus:outline-none focus:ring-0 focus:ring-gray-600 focus:border border-input",
-      "disabled:opacity-50 disabled:cursor-not-allowed",
-      "hover:border border-input",
-      className
-    )}
-    {...props}
-  >
-    {children}
-    <SelectPrimitive.Icon asChild>
-      <ChevronDown className="h-4 w-4 text-white/40" />
-    </SelectPrimitive.Icon>
-  </SelectPrimitive.Trigger>
+  ref={ref}
+  className={cn(
+    "flex h-12 w-full items-center justify-between rounded-lg bg-[#fbe0c3] px-4 py-2 text-sm text-black",
+    "focus:outline-none focus:ring-0 focus:border border border-black/30",
+    "disabled:opacity-50 disabled:cursor-not-allowed",
+    className
+  )}
+  {...props}
+>
+  <SelectPrimitive.Value
+    placeholder="Select Age"
+    className="data-[placeholder]:text-gray-400"
+  />
+  <SelectPrimitive.Icon asChild>
+    <ChevronDown className="h-4 w-4 text-black/40" />
+  </SelectPrimitive.Icon>
+</SelectPrimitive.Trigger>
+
 ))
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName
 

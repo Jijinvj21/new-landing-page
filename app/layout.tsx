@@ -4,20 +4,20 @@ import type { Metadata } from "next"
 import { ReactNode } from "react"
 
 export const metadata: Metadata = {
-  title: "Your money, your moves",
+  title: "In Her Interest - Your money, your moves",
   description:
     "Money talk that feels like a group chat. No jargon. No shame. Just clarity. An initiative by Zerodha.",
   icons: {
     icon: "/FeviconlHl.svg", // Path to favicon, ideally use .ico for best support
   },
   openGraph: {
-    title: "Your money, your moves",
+    title: "In Her Interest - Your money, your moves",
     description:
       "Money talk that feels like a group chat. No jargon. No shame. Just clarity. An initiative by Zerodha.",
     url: "https://yourdomain.com", // Replace with your actual domain
     images: [
       {
-        url: "/FeviconlHl.svg",
+        url: "/ogimage.png",
         width: 1200,
         height: 630,
         alt: "Your App Open Graph Image",
@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your money, your moves",
+    title: "In Her Interest - Your money, your moves",
     description:
       "Money talk that feels like a group chat. No jargon. No shame. Just clarity. An initiative by Zerodha.",
-    images: ["/FeviconlHl.svg"],
+    images: ["/ogimage.png"],
   },
 }
 

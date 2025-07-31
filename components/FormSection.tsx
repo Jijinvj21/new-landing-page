@@ -12,7 +12,7 @@ export default function FormSection() {
     }}>
       {/* LEFT SIDE - TEXT CONTENT WITH LOGO */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
-        <div className="w-full max-w-lg p-8 text-white text-center md:text-left">
+        <div className="w-full max-w-lg p-8 md:p-0 text-[#f8e4d2] text-center md:text-left">
           {/* Logo at top - centered and moved up */}
           <div className="mb-12 md:mb-20">
             <img 
@@ -25,7 +25,7 @@ export default function FormSection() {
           {/* Text content */}
           <div>
             <h2 className="text-4xl font-bold mb-6 leading-tight">
-              GREAT! YOU ARE ONE STEP CLOSER TO ACHIEVING YOUR <span className="text-[#3c1c1a]">MONEY GOALS.</span>
+              GREAT! YOU ARE ONE STEP CLOSER TO ACHIEVING YOUR <span className="text-[#ff8ad0]">MONEY GOALS.</span>
             </h2>
             <p className="text-lg mb-8">
               Fill in your details so we can keep you in the loop about events, 

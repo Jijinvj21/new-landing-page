@@ -6,15 +6,16 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-
 model Lead {
-  id       Int     @id @default(autoincrement())
-  name     String
-  phone    String
-  email    String
-  company  String?
-  linkedin String?
-  age      String
-  city     String
-  createdAt DateTime @default(now())
+  id         Int      @id @default(autoincrement())
+  firstName  String
+  lastName   String
+  phone      String   @unique
+  email      String   @unique
+  company    String?
+  linkedin   String?
+  age        String
+  city       String
+  createdAt  DateTime @default(now())
 }
+
